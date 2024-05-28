@@ -22,10 +22,18 @@
           align-items: center;
           justify-content: center;
      }
+     table{
+          text-align: center;
+          border-collapse: collapse;
+     }
+     th,td{
+          padding: 1%;
+          width: 20%;
+     }
 </style>
 <body>
      <h1>Sistema para o Restaurante</h1>
-     <table border="1">
+     <table border="1" >
           <tr>
                <th>Nome</th>
                <th>Tipo</th>
@@ -45,5 +53,6 @@
                     }
           ?>
      </table>
+     <a href="cadastro.php">Cadastrar novos Produtos</a>
 </body>
 </html>
