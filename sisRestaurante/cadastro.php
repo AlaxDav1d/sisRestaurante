@@ -43,8 +43,19 @@
      }
      .forms{
           display: flex;
+          flex-direction: column;
+          align-items: center;
           justify-content: center;
           margin: 12% 0;
+     }
+     a{
+          color: yellow;
+          margin-bottom: 5%;
+          font-size: 120%;
+          transition: 200ms;
+     }
+     a:hover{
+          color: #fff;
      }
      form{
           width: 30%;
@@ -107,6 +118,7 @@
 </style>
 <body>
      <div class="forms">
+          <a href="index.php">Retornar a Pagina Inicial</a>
           <form action="" method="get" >
                <p>Nome do Item:</p>
                <input type="text" name="nome" id="nome">
@@ -135,7 +147,7 @@
                          $_POST['quant'] = '';
                          $_POST['valor'] = '';
                ?>
-               <h3>Enviado Com Sucesso</h3>
+               <script>alert('Item Criado com Sucesso!')</script>
                <?php
                     }else{
                          echo "<script>alert('Não Pode Existir Campos Vazios')</script>";
